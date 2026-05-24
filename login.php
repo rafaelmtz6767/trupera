@@ -3,13 +3,18 @@ session_start();
 $mensaje_error = "";
 
 if ($_POST) {
-    $usuario_correcto = "24160711@itoaxaca.edu.mx";
-    $pass_correcto = "24160711";
+    $usuarios_validos = [
+        "24160711@itoaxaca.edu.mx" => "24160711",
+        "24160807@itoaxaca.edu.mx" => "24160807"
+    ];
 
-    if ($_POST['email'] === $usuario_correcto && $_POST['password'] === $pass_correcto) {
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+
+    if (array_key_exists($email, $usuarios_validos) && $usuarios_validos[$email] === $password) {
         $_SESSION['admin'] = true;
         header("Location: admin.php");
-        exit(); 
+        exit();
     } else {
         $mensaje_error = "Credenciales incorrectas. Acceso denegado.";
     }
