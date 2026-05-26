@@ -83,7 +83,7 @@ if ($_POST) {
 </head>
 <body>
     <div class="login-container">
-        <h2>Panel Administrativo</h2>
+        <h2>Panel Admin Isay</h2>
         <?php if($mensaje_error != "") echo "<div class='error'>$mensaje_error</div>"; ?>
         <form method="POST">
             <input type="email" name="email" placeholder="Correo institucional" required>

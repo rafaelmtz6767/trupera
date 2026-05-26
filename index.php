@@ -223,14 +223,12 @@ $error_conexion = $conexion->connect_error ? true : false;
         <div class="grid-productos">
             <?php
             if (!$error_conexion) {
-                // Actualizamos la consulta para traer el precio y el stock
                 $query = "SELECT id, nombre, precio, stock FROM herramientas ORDER BY id DESC";
                 $resultado = $conexion->query($query);
 
                 if ($resultado && $resultado->num_rows > 0) {
                     while($fila = $resultado->fetch_assoc()) {
                         
-                        // Lógica para etiquetas de stock
                         $stock_class = "stock-ok";
                         $stock_text = "En stock: " . $fila['stock'];
                         
@@ -246,7 +244,6 @@ $error_conexion = $conexion->connect_error ? true : false;
                         echo "<div class='producto-icono'>🛠️</div>";
                         echo "<div class='producto-titulo'>" . htmlspecialchars($fila['nombre']) . "</div>";
                         
-                        // Validamos que el precio exista para no mostrar errores
                         $precio = isset($fila['precio']) ? $fila['precio'] : 0;
                         echo "<div class='producto-precio'>$" . number_format($precio, 2) . "</div>";
                         
