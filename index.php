@@ -12,7 +12,7 @@ $error_conexion = $conexion->connect_error ? true : false;
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Truper - Catálogo y Herramientas Profesionales</title>
+    <title>Truper - Catálogo y Herramientas Profesionales </title>
     <style>
         :root {
             --truper-orange: #ff6600;
@@ -279,7 +279,7 @@ $error_conexion = $conexion->connect_error ? true : false;
     
     <footer>
         <p>&copy; 2026 Truper - Taller de Sistemas Operativos</p>
-        <p>Desarrollado por: Rafael Isay Martinez Zurita | Número de Control: 24160711</p>
+        <p></p>
     </footer>
 </body>
 </html>
