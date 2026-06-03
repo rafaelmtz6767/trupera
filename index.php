@@ -214,9 +214,9 @@ $error_conexion = $conexion->connect_error ? true : false;
         <p>Descubre nuestro catálogo de herramientas diseñadas para brindar la mayor resistencia, precisión y durabilidad en cada uno de tus proyectos.</p>
     </header>
     
-    <section id="productos">
+    <section id="productos"> 
         <div class="section-header">
-            <h2>Nuestros Productos</h2>
+            <h2>Tercera oportunidad TSO J.L.S.I INDEX    </h2>
             <p>Catálogo actualizado de herramientas manuales y eléctricas en existencia</p>
         </div>
         

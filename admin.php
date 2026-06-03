@@ -352,7 +352,7 @@ $resultado = mysqli_query($conn, "SELECT * FROM herramientas ORDER BY id DESC");
     </div>
 
     <footer>
-        Sistema administrado por Rafael Isay Martínez Zurita (No. Control: 24160711)
+        
     </footer>
 
 </body>
